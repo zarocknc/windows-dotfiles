@@ -16,11 +16,16 @@ function sdk {
     scoop reset $packageName
 }
 
+function Quit-Shell {
+    exit
+}
+
 Set-Alias -Name c -Value Clear-Host
 Set-Alias -Name vi -Value nvim
 Set-Alias -Name lg -Value lazygit
 Set-Alias -Name gs -Value "git status"
 Set-Alias -Name gf -Value "git fetch"
+Set-Alias -Name q -Value Quit-Shell
 
 
 ## ALWAYS AT THE END OF FILE
