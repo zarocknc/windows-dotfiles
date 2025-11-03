@@ -8,9 +8,6 @@ function y {
     Remove-Item -Path $tmp
 }
 
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
-Invoke-Expression (&starship init powershell)
-
 function sdk {
     param(
         [string]$version
@@ -24,3 +21,8 @@ Set-Alias -Name vi -Value nvim
 Set-Alias -Name lg -Value lazygit
 Set-Alias -Name gs -Value "git status"
 Set-Alias -Name gf -Value "git fetch"
+
+
+## ALWAYS AT THE END OF FILE
+Invoke-Expression (&starship init powershell)
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
