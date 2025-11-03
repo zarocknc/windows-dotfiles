@@ -22,3 +22,5 @@ function sdk {
 Set-Alias -Name c -Value Clear-Host
 Set-Alias -Name vi -Value nvim
 Set-Alias -Name lg -Value lazygit
+Set-Alias -Name gs -Value "git status"
+Set-Alias -Name gf -Value "git fetch"
